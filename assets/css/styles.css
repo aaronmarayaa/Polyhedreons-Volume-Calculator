@@ -1,36 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
-*{
-    font-family: 'Outfit', sans-serif;
-    color: rgb(198, 198, 198);
-    text-decoration: none;
+* {
+  font-family: "Outfit", sans-serif;
+  color: rgb(198, 198, 198);
+  text-decoration: none;
 }
 
-body{
-    display: grid;
-    place-items: center;
-    background-color: rgb(29, 29, 29);
-    padding: 1rem;
+body {
+  display: grid;
+  place-items: center;
+  background-color: rgb(29, 29, 29);
+  padding: 1rem;
 }
 
 .container {
-    text-align: center;
-    display: grid;
-    place-items: center;
+  text-align: center;
+  display: grid;
+  place-items: center;
 }
 
-.container h2{
-    font-size: 2rem;
+.container h2 {
+  font-size: 2rem;
+}
+
+.container .btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .container a {
-    background-color: hsl(218, 44%, 22%);
-    padding: 1rem 2rem;
-    margin: 1rem;
-    border-radius: 5px;
-    border-bottom: 5px solid hsl(217, 64%, 21%);
+  flex-basis: 13%;
+  background-color: hsl(218, 44%, 22%);
+  padding: 2rem 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  border-bottom: 5px solid hsl(217, 64%, 21%);
 }
 .container a:hover {
-    transform: scale(1.1);
-    transition: 400ms;
+  transform: scale(1.1);
+  transition: 400ms;
 }
