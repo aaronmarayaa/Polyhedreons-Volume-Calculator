@@ -2,14 +2,14 @@
 
 * {
   font-family: "Outfit", sans-serif;
-  color: rgb(198, 198, 198);
+  color: white;
   text-decoration: none;
 }
 
 body {
   display: grid;
   place-items: center;
-  background-color: rgb(29, 29, 29);
+  background-color: #1f100e;
   padding: 1rem;
 }
 
@@ -32,15 +32,15 @@ body {
 
 .container .nav a {
   box-sizing: border-box;
-  min-width: 180px;
-  min-height: 140px;
   flex-basis: 15%;
-  padding: 20px;
-  background-color: hsl(218, 44%, 22%);
+  min-width: 180px;
+  min-height: 130px;
+  padding: 1rem;
+  background-color: #a8554d;
   margin: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   border-radius: 5px;
-  border-bottom: 5px solid hsl(217, 64%, 21%);
+  border-bottom: 5px solid #743a35;
 }
 .container .nav a:hover {
   transform: scale(1.1);
