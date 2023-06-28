@@ -23,17 +23,15 @@ body {
   font-size: 2rem;
 }
 
-.container .btn-container {
+.container .nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.container .btn-container a {
+.container .nav a {
   box-sizing: border-box;
-  width: 200px;
-  height: 140px;
   flex-basis: 15%;
   padding: 20px;
   background-color: hsl(218, 44%, 22%);
@@ -42,7 +40,7 @@ body {
   border-radius: 5px;
   border-bottom: 5px solid hsl(217, 64%, 21%);
 }
-.container .btn-container a:hover {
+.container .nav a:hover {
   transform: scale(1.1);
   transition: 400ms;
 }
