@@ -32,6 +32,8 @@ body {
 
 .container .nav a {
   box-sizing: border-box;
+  min-width: 180px;
+  min-height: 140px;
   flex-basis: 15%;
   padding: 20px;
   background-color: hsl(218, 44%, 22%);
