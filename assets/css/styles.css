@@ -41,10 +41,10 @@ body {
   font-size: 0.8rem;
   border-radius: 5px;
   border-bottom: 5px solid #743a35;
+  transition: 400ms;
 }
 .container .nav a:hover {
   transform: scale(1.1);
-  transition: 400ms;
 }
 
 a img {
