@@ -17,7 +17,7 @@ body {
 .container {
   display: grid;
   place-items: center;
-  padding: 2rem;
+  padding: 2rem 13%;
   border: 2px solid white;
   border-radius: 15px;
 }
@@ -26,13 +26,13 @@ body {
   margin-top: 1.5rem;
 }
 
+.container h3 {
+  color: #a8554d;
+}
+
 .container .formula {
   display: flex;
   align-items: center;
-}
-
-.container .formula h3 {
-  font-size: 1rem;
 }
 
 .container .formula input {
