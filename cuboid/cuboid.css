@@ -49,14 +49,15 @@ body {
   -webkit-appearance: none;
 }
 
-.container a {
+.container button {
   background-color: #a8554d;
+  border: none;
   border-radius: 5px;
   border-bottom: 5px solid #743a35;
   padding: 1rem 2rem;
   margin-top: 3rem;
   transition: 400ms;
 }
-.container a:hover {
+.container button:hover {
   transform: scale(1.1);
 }
