@@ -6,12 +6,21 @@
 
     <link rel="icon" href="/assets/images/shapes.png" />
 
-    <link rel="stylesheet" href="cuboid.css">
+    <link rel="stylesheet" href="cuboid.css" />
 
     <title>Polyhedrons Volume Calculator</title>
   </head>
   <body>
-    <h1>Cuboid</h1>
+    <div class="container">
+      <h1>Cuboid</h1>
+      <h3>Volume =</h3>
+      <div class="formula">
+        <input type="number" id="length" placeholder="Length" /> *
+        <input type="number" id="width" placeholder="Width" /> *
+        <input type="number" id="height" placeholder="Height" />
+      </div>
+      <a href="#">Solve</a>
+    </div>
 
     <script src="cuboid.js"></script>
   </body>
