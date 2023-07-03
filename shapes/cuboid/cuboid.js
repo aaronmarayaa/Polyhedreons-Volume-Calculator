@@ -1,9 +1,9 @@
 const length = document.querySelector("#length");
 const width = document.querySelector("#width");
 const height = document.querySelector("#height");
-const volume = document.querySelector("#volume");
-const area = document.querySelector("#area");
-const diagonal = document.querySelector("#diagonal");
+const volume_result = document.querySelector("#volume-result");
+const area_result = document.querySelector("#area-result");
+const diagonal_result = document.querySelector("#diagonal-result");
 const solve_btn = document.querySelector("#solve-btn");
 
 solve_btn.onclick = (evt) => {
@@ -18,7 +18,7 @@ solve_btn.onclick = (evt) => {
     length.value ** 2 + width.value ** 2 + height.value ** 2
   );
 
-  volume.innerHTML = volume_value;
-  area.innerHTML = area_value;
-  diagonal.innerHTML = diagonal_value.toFixed(4);
+  volume_result.innerHTML = volume_value;
+  area_result.innerHTML = area_value;
+  diagonal_result.innerHTML = diagonal_value.toFixed(4);
 };
