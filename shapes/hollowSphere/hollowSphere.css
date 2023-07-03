@@ -17,7 +17,7 @@ body {
 .container {
   display: grid;
   place-items: center;
-  padding: 2rem 6%;
+  padding: 2rem 5%;
   border: 2px solid white;
   border-radius: 15px;
 }
