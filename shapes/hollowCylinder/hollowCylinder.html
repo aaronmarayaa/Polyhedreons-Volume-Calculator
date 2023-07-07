@@ -11,7 +11,23 @@
     <title>Polyhedrons Volume Calculator</title>
   </head>
   <body>
-    <h1>Hollow Cylinder</h1>
+    <div class="container">
+      <h1>Hollow Cylinder</h1>
+
+      <h3>Volume (cubic units) = <span id="volume-result"></span></h3>
+      <h3>
+        Surface Area (Squared units) = <span id="surfaceArea-result"></span>
+      </h3>
+
+      <div class="formula">
+        <input type="number" id="outer-radius" placeholder="Outer Radius" />
+        <input type="number" id="inner-radius" placeholder="Inner Radius" />
+        <input type="number" id="height" placeholder="Height" />
+      </div>
+
+      <button id="solve-btn">Solve</button>
+    </div>
+
     <script src="hollowCylinder.js"></script>
   </body>
 </html>
