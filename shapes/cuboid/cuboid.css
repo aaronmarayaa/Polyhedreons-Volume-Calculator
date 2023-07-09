@@ -11,13 +11,13 @@ body {
   display: grid;
   place-items: center;
   background-color: #1f100e;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .container {
   display: grid;
   place-items: center;
-  padding: 2rem 5%;
+  padding: 2rem 3%;
   border: 2px solid white;
   border-radius: 15px;
   animation: fade-in 1000ms ease-in-out forwards;
