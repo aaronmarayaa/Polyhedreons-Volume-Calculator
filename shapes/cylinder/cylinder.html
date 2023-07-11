@@ -11,7 +11,21 @@
     <title>Polyhedrons Volume Calculator</title>
   </head>
   <body>
-    <h1>Cylinder</h1>
+    <div class="container">
+      <h1>Cylinder</h1>
+      <h3>Volume (cubic units) = <span id="volume-result"></span></h3>
+      <h3>
+        Surface Area(squared units) = <span id="surfaceArea-result"></span>
+      </h3>
+
+      <div class="formula">
+        <input type="number" id="radius" placeholder="Radius" />
+        <input type="number" id="height" placeholder="Height" />
+      </div>
+
+      <button type="button" id="solve-btn">Solve</button>
+    </div>
+
     <script src="cylinder.js"></script>
   </body>
 </html>
