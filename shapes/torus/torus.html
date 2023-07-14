@@ -11,7 +11,18 @@
     <title>Polyhedrons Volume Calculator</title>
   </head>
   <body>
-    <h1>Torus</h1>
+    <div class="container">
+      <h1>Torus</h1>
+      <h3>Volume (cubic units) = <span id="volume-result"></span></h3>
+      <h3>Area (squared units) = <span id="area-result"></span></h3>
+
+      <div class="formula">
+        <input type="number" id="major-radius" placeholder="Major Radius" />
+        <input type="number" id="minor-radius" placeholder="Minor Radius" />
+      </div>
+
+      <button type="button" id="solve-btn">Solve</button>
+    </div>
 
     <script src="torus.js"></script>
   </body>
