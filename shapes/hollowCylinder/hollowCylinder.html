@@ -13,15 +13,13 @@
   <body>
     <div class="container">
       <h1>Hollow Cylinder</h1>
-
-      <h3>Volume (cubic units) = <span id="volume-result"></span></h3>
-      <h3>
-        Surface Area (Squared units) = <span id="surfaceArea-result"></span>
-      </h3>
+      
+      <h3>Volume (cubic units) = <span id="volume-result">π(R² - r²)h</span></h3>
+      <h3>Area (Squared units) = <span id="surfaceArea-result">2π[h(R + r) + (R² - r²)]</span></h3>
 
       <div class="formula">
-        <input type="number" id="outer-radius" placeholder="Outer Radius" />
-        <input type="number" id="inner-radius" placeholder="Inner Radius" />
+        <input type="number" id="outer-radius" placeholder="Outer Radius(R)" />
+        <input type="number" id="inner-radius" placeholder="Inner Radius(r)" />
         <input type="number" id="height" placeholder="Height" />
       </div>
 
