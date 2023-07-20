@@ -48,7 +48,7 @@ h1,
 }
 
 .container .formula input {
-  width: 5rem;
+  width: 6.2rem;
   margin: 1rem;
   background-color: transparent;
   border: none;
@@ -73,4 +73,10 @@ h1,
 }
 .container button:hover {
   transform: scale(1.1);
+}
+
+@media only screen and (max-width: 380px) {
+  .container .formula input {
+    margin: 1rem 0;
+  }
 }
