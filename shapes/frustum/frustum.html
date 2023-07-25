@@ -1,18 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="/assets/images/shapes.png" />
 
     <link rel="stylesheet" href="frustum.css" />
 
     <title>Polyhedrons Volume Calculator</title>
-</head>
-<body>
-    <h1>Frustum</h1>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Frustum</h1>
+      <h3>
+        Volume (cubic units) =
+        <span id="volume-result">πh/3(R² + Rr + r²)</span>
+      </h3>
+      <h3>
+        Area(squared units) =
+        <span id="area-result">π(r² + R + (r + R) * L)</span>
+      </h3>
+
+      <p>L is slant height = √(h² + (R - r)²)</p>
+
+      <div class="formula">
+        <input type="number" id="lower-radius" placeholder="Upper Radius(r)" />
+        <input type="number" id="upper-radius" placeholder="Lower Radius(R)" />
+        <input type="number" id="height" placeholder="Height" />
+      </div>
+
+      <button type="button" id="solve-btn">Solve</button>
+    </main>
 
     <script src="frustum.js"></script>
-</body>
+  </body>
 </html>
