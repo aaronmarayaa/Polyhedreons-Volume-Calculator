@@ -1,3 +1,82 @@
-h1 {
-    color: red;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+  color: white;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: #1f100e;
+  padding: 1rem 0;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  padding: 2rem 3%;
+  border: 2px solid white;
+  border-radius: 15px;
+  animation: fade-in 1000ms ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container > * {
+  margin-top: 1.5rem;
+}
+
+h1,
+.container h3 span {
+  color: #ae625a;
+  text-align: center;
+}
+
+.container .formula {
+  display: flex;
+  align-items: center;
+}
+
+.container .formula input {
+  width: 6.2rem;
+  margin: 1rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #a8554d;
+  text-align: center;
+}
+.container .formula input[type="number"]:focus {
+  outline: none;
+}
+.container .formula input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.container button {
+  background-color: #a8554d;
+  border: none;
+  border-radius: 5px;
+  border-bottom: 5px solid #743a35;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  transition: 400ms;
+}
+.container button:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 380px) {
+    .container .formula input {
+      margin: 1rem 0.1rem;
+    }
 }
