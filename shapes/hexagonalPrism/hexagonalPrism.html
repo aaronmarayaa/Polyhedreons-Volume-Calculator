@@ -11,7 +11,24 @@
     <title>Polyhedrons Volume Calculator</title>
   </head>
   <body>
-    <h1>Hexagonal Prism</h1>
+    <main class="container">
+      <h1>Hexagonal Prism</h1>
+      <h3>
+        Volume (cubic units) =
+        <span id="volume-result">((3 * √3) / 2 ) * a² h</span>
+      </h3>
+      <h3>
+        Area (squared units) =
+        <span id="area-result">6 a h + 3 √3 a²</span>
+      </h3>
+
+      <div class="formula">
+        <input type="number" id="base-edge" placeholder="Base edge(a)" />
+        <input type="number" id="height" placeholder="Height(h)" />
+      </div>
+
+      <button type="button" id="solve-btn">Solve</button>
+    </main>
 
     <script src="hexagonalPrism.js"></script>
   </body>
