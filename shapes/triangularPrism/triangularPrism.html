@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/assets/images/shapes.png" />
+
+    <link rel="stylesheet" href="triangularPrism.css" />
+
+    <title>Polyhedrons Volume Calculator</title>
+  </head>
+  <body>
+    <main class="container">
+        <h1>Triangular Prism</h1>
+        <h3>Volume (cubic units) = <span id="volume-result">(πr²)(2πR)</span></h3>
+  
+        <div class="formula">
+          <input type="number" id="base-sideA" placeholder="Base side(a)" />
+          <input type="number" id="base-sideB" placeholder="Base side(b)" />
+          <input type="number" id="base-sideC" placeholder="Base side(c)" />
+          <input type="number" id="height" placeholder="Height" />
+        </div>
+  
+        <button type="button" id="solve-btn">Solve</button>
+    </main>
+
+    <script src="triangularPrism.js"></script>
+  </body>
+</html>
