@@ -11,7 +11,18 @@
     <title>Polyhedrons Volume Calculator</title>
   </head>
   <body>
-    <h1>Sliced Cylinder</h1>
+    <main class="container">
+        <h1>Sliced Cylinder</h1>
+        <h3>Volume (cubic units) = <span id="volume-result">πr²((h + H) / 2)</span></h3>
+  
+        <div class="formula">
+          <input type="number" id="radius" placeholder="Radius(r)" />
+          <input type="number" id="long-height" placeholder="Long Height(H)" />
+          <input type="number" id="short-height" placeholder="Short Height(h)" />
+        </div>
+  
+        <button type="button" id="solve-btn">Solve</button>
+    </main>
 
     <script src="slicedCylinder.js"></script>
   </body>
