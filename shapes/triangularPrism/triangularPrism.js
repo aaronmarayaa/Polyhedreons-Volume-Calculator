@@ -20,6 +20,9 @@ function getVolume(a, b, c, h) {
     const term3 = (c + a - b)
     const term4 = (a + b - c)
     const volume_value = (1/4) * h * Math.sqrt(term1 * term2 * term3 * term4)
-
-    volume_result.innerHTML = volume_value.toFixed(4)
+    
+    if((a + b) <= c) volume_result.innerHTML = "(a + b) > c"
+    else if((b + c) <= a) volume_result.innerHTML = "(b + c) > a"
+    else if((a + c) <= b) volume_result.innerHTML = "(a + c) > b"
+    else volume_result.innerHTML = volume_value.toFixed(4)
 }
