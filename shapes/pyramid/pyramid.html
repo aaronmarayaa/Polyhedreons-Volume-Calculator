@@ -11,7 +11,21 @@
     <title>Polyhedrons Volume Calculator</title>
   </head>
   <body>
-    <h1>Pyramid</h1>
+    <main class="container">
+        <h1>Pyramid</h1>
+        <h3>Volume (cubic units) = <span id="volume-result">(l * w * h) / 3</span></h3>
+        <h3>Area (squared units) = <span id="area-result">
+            l * w + l * (√[(w/2)^2 + h^2)] + (w * √[(l/2)^2 + h^2])
+        </span></h3>
+  
+        <div class="formula">
+          <input type="number" id="length" placeholder="Length(l)" />
+          <input type="number" id="width" placeholder="Width(w)" />
+          <input type="number" id="height" placeholder="Height(h)" />
+        </div>
+  
+        <button type="button" id="solve-btn">Solve</button>
+    </main>
 
     <script src="pyramid.js"></script>
   </body>
