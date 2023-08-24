@@ -11,7 +11,18 @@
     <title>Polyhedrons Volume Calculator</title>
   </head>
   <body>
-    <h1>Triangular Pyramid</h1>
+    <main class="container">
+        <h1>Triangular Pyramid</h1>
+        <h3>Volume (cubic units) = <span id="volume-result">(πr²)(2πR)</span></h3>
+  
+        <div class="formula">
+          <input type="number" id="height" placeholder="Height(h)" />
+          <input type="number" id="base" placeholder="Base(b)" />
+          <input type="number" id="length" placeholder="Length(l)" />
+        </div>
+  
+        <button type="button" id="solve-btn">Solve</button>
+    </main>
 
     <script src="triangularPyramid.js"></script>
   </body>
