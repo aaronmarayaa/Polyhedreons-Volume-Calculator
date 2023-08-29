@@ -12,7 +12,18 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Sphere Sector</h1>
+    <main class="container">
+        <h1>Sphere Sector</h1>
+        <h3>Volume (cubic units) = <span id="volume-result">2/3 * πr²h</span></h3>
+        <h3>Area (square units) = <span id="area-result">πr(2 * h + a)</span></h3>
+  
+        <div class="formula">
+          <input type="number" id="radius" placeholder="Radius(r)" />
+          <input type="number" id="height" placeholder="Height(h)" />
+        </div>
+  
+        <button type="button" id="solve-btn">Solve</button>
+    </main>
 
     <script src="sphereSector.js"></script>
   </body>
